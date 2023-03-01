@@ -51,7 +51,7 @@ h1{
     display: flex;
     flex-direction: column;
     text-align: center;
-    border-radius:25px;
+    border-radius:60px;
     background-color: #fef7e2;
     align-items: center;
     display: flex;
@@ -62,8 +62,8 @@ h1{
 }
 
 .card img{
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
     width: 100%;
 
 }
@@ -72,9 +72,6 @@ h1{
     justify-content: center;
     gap: 50px;
     display: flex;
-    align-items: baseline;
-    
-
 }
 
 
@@ -98,6 +95,8 @@ h1{
 
 .prezzo{
   margin-right: 1rem ;
+  font-size: 1rem;
+  padding-top: 0.5rem;
 }
 .add{
     font-weight: bold;
@@ -135,4 +134,107 @@ flex-direction: column;
 
 .imgArt{
     width: 100%;
+}
+
+/*mobile view */
+@media screen and (min-width: 300px) and (max-width: 575px) {
+
+header{
+   flex-direction: row;
+   border-radius: 100px;
+   max-width: 90%;
+   margin: 0 auto;
+   flex-wrap: wrap;
+    
+}
+
+.shop{
+    order: -1;
+    width: 450px;
+    font-size: 2rem;
+    padding-inline: 0.2rem;
+    padding-block: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 80px;
+    align-content: center;
+}
+
+.secondo{
+    width: 200px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-inline: 0.2rem;
+    padding-block: 1.5rem;
+    margin:0.5rem 0.7rem ;
+
+}
+.titolo{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+h1{
+   margin: 3rem auto; 
+   font-size: 2.5rem;
+   width: 250px;
+   text-align: center;
+   line-height: 2.4rem;
+}
+
+.cards{
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+}
+
+.card{
+   max-width: 550px;
+
+}
+
+.description{
+    display: flex;    
+}
+
+.items{
+   flex-wrap: wrap; 
+   
+}
+
+.items h2{
+    font-size: 1.8rem;
+}
+
+.items p{
+    font-size: 1.6rem;
+}
+.prezzo{
+    font-size: 1.5rem;
+    padding-right: 3rem;
+    padding-top: 1.5rem;
+}
+
+.add{
+   width: 20rem; 
+   padding: 0.7rem 0;
+   font-size: 1.2rem;
+}
+
+h3{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 4rem;
+}
+
+.titArt{
+    font-size: 1.8rem;
+}
+
+.testo{
+    font-size: 1.2rem;
+}
+
 }
